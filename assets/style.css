@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+h1 {
+font-size: 54px;
+line-height: 60px;
+font-family: 'Playfair Display';
+font-weight: 700;
+font-style: italic;
+}
+
+h2 {
+font-size: 36px;
+line-height: 40px;
+font-family: 'Playfair Display';
+font-weight: 700;
+font-style: italic;
+}
+
+h3 {
+font-size: 24px;
+line-height: 30px;
+font-family: 'Playfair Display';
+font-weight: 600;
+}
+
+h4,
+p {
+font-size: 16px;
+line-height: 20px;
+font-family: 'Source Sans Pro';
+}
+
+h4 {
+    font-family: 'Playfair Display';
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.titoletto {
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header {
+    background-color: seagreen;
+    color: white;
+    background-image: url(./Farmington.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.navigazione-header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.navigazione-header ul {
+    list-style: none;
+}
+
+.elemento-navigazione {
+    display: inline-block;
+    padding: 5px;
+    font-family: "Source Sans Pro";
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.elemento-navigazione a {
+    color: white;
+    text-decoration: none;
+}
+
+.info-principali {
+    max-width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.contenitore-avatar {
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inner {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenitore-bio {
+    display: flex;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    margin-top: -80px;
+    margin-bottom: 80px;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    border-radius: 20px;
+  }
+  
+  .colonne-2 {
+    flex-basis: 50%;
+    width: 50%;
+    padding: 40px;
+  }
+  
+  .about {
+    border-right: 1px solid rgba(0,0,0,0.1);
+  }
+
+.titolo-sezione {
+    text-align: center;
+}
+
+  .lavori {
+      display: flex;
+      gap: 40px 5%;
+      flex-wrap: wrap;
+  }
+
+.pittura { 
+    flex-basis: 47.5%;
+}
+
+.contenitore-immagine-pittura {
+width: 100%;
+padding-top: 100%;
+position: relative;
+}
+
+.immagine-pittura {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.pittura:first-child {
+    flex-basis: 100%;
+}
+
+.pittura:first-child .contenitore-immagine-pittura{ 
+padding-top: 60%;
+}
+
+.pittura h3 {
+    font-family: "Source Sans Pro";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: -20px;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    color: whitesmoke;
+    padding: 2px 4px;
+    width: fit-content;
+}
+
+.fotografia h3 {
+    font-family: "Source Sans Pro";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: -20px;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    color: whitesmoke;
+    padding: 2px 4px;
+    width: fit-content;
+}
+
+.fotografia { 
+    flex-basis: 30.5%;
+}
+
+.contenitore-immagine-fotografia {
+width: 100%;
+padding-top: 100%;
+position: relative;
+}
+
+.immagine-fotografia {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.fotografia:first-child {
+    flex-basis: 100%;
+}
+
+.fotografia:first-child .contenitore-immagine-fotografia{ 
+padding-top: 60%;
+}
+
+.percorso {
+    display: flex; 
+    margin-bottom: 40px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+    transition: all 0.5s;
+}
+
+.percorso:after {
+    content: "";
+    height: 40px;
+    border-left: 3px dotted seagreen;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+}
+
+.percorso:nth-child(even) .data-percorso {
+order: 1;
+}
+
+.percorso:hover {
+box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+.percorso:hover .data-percorso{
+    background: darkslategray;
+}
+
+.data-percorso {
+    flex-basis: 33%;
+    background: seagreen;
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.data-titolo {
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+}
+
+.data-sottotitolo {
+    font-size: 36px;
+    line-height: 40px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+}
+
+.data-separatore {
+    border-bottom: 4px solid;
+    widht: 30%;
+}
+
+.contenuto-percorso {
+    flex-basis: 67%;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.contenuto-percorso h3 {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+}
+
+.footer {
+    background-color: seagreen;
+    color: whitesmoke;
+    padding: 40px;
+}
+
+.footer a {
+    color: white;
+}
+
+.contatti {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social {
+    fill: white;
+    max-width: 32px;
+    display: inline-block;
+}
